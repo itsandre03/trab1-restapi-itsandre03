@@ -1,4 +1,4 @@
-const API_URL = 'https://backend-nlhp.onrender.com:10000';
+const API_URL = 'https://backend-nlhp.onrender.com';
 
 const tbodyAlunos = document.getElementById('listaAlunos');
 const alunoForm = document.getElementById('alunoForm');
