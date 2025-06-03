@@ -1,0 +1,26 @@
+Localmente:
+Servidor principal – http://localhost:3000
+É o endereço base onde o servidor da aplicação está a correr localmente.
+
+Alunos – http://localhost:3000/alunos
+Endpoint para consultar, adicionar, editar ou remover alunos. Usa-se com os métodos HTTP apropriados (GET, POST, PUT, DELETE).
+
+Cursos – http://localhost:3000/cursos
+Endpoint para gerir os cursos disponíveis. Tal como o dos alunos, suporta operações CRUD.
+
+Swagger – http://localhost:3000/api-docs
+Interface interativa gerada automaticamente para documentar e testar a API de forma simples e visual.
+
+
+Render:
+Servidor principal – https://backend-nlhp.onrender.com
+É o endereço base onde o servidor da aplicação está a correr.
+
+Alunos – https://backend-nlhp.onrender.com/alunos
+Endpoint para consultar, adicionar, editar ou remover alunos. Usa-se com os métodos HTTP apropriados (GET, POST, PUT, DELETE).
+
+Cursos – https://backend-nlhp.onrender.com/cursos
+Endpoint para gerir os cursos disponíveis. Tal como o dos alunos, suporta operações CRUD.
+
+Swagger – https://backend-nlhp.onrender.com/api-docs
+Interface interativa gerada automaticamente para documentar e testar a API de forma simples e visual.

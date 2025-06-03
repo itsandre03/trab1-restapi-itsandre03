@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Alunos e Cursos",
+    "version": "1.0.0",
+    "description": "Documentação Swagger"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/alunos": {
+      "get": {
+        "summary": "Obter todos os alunos",
+        "responses": {
+          "200": {
+            "description": "Lista de alunos"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar novo aluno",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Aluno"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Aluno criado com sucesso"
+          }
+        }
+      }
+    },
+    "/cursos": {
+      "get": {
+        "summary": "Obter todos os cursos",
+        "responses": {
+          "200": {
+            "description": "Lista de cursos"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar novo curso",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Curso"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Curso criado com sucesso"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Aluno": {
+        "type": "object",
+        "properties": {
+          "nome": { "type": "string" },
+          "apelido": { "type": "string" },
+          "curso": { "type": "string" },
+          "anoCurricular": { "type": "string" }
+        },
+        "required": ["nome", "apelido", "curso", "anoCurricular"]
+      },
+      "Curso": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "nomeDoCurso": { "type": "string" }
+        },
+        "required": ["id", "nomeDoCurso"]
+      }
+    }
+  }
+}
